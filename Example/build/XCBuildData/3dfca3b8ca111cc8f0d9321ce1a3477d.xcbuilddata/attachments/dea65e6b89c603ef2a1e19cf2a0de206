@@ -1,0 +1,15 @@
+{
+  "" : {
+    "const-values" : "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Pods.build/Release-iphoneos/BridgeKit.build/Objects-normal/arm64/BridgeKit-master.swiftconstvalues",
+    "dependencies" : "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Pods.build/Release-iphoneos/BridgeKit.build/Objects-normal/arm64/BridgeKit-master.d",
+    "diagnostics" : "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Pods.build/Release-iphoneos/BridgeKit.build/Objects-normal/arm64/BridgeKit-master.dia",
+    "emit-module-dependencies" : "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Pods.build/Release-iphoneos/BridgeKit.build/Objects-normal/arm64/BridgeKit-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Pods.build/Release-iphoneos/BridgeKit.build/Objects-normal/arm64/BridgeKit-master-emit-module.dia",
+    "swift-dependencies" : "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Pods.build/Release-iphoneos/BridgeKit.build/Objects-normal/arm64/BridgeKit-master.swiftdeps"
+  },
+  "/Users/ayberkmogol/Projects/BridgeKit/BridgeKit/Classes/BridgeKit.swift" : {
+    "index-unit-output-path" : "/Pods.build/Release-iphoneos/BridgeKit.build/Objects-normal/arm64/BridgeKit.o",
+    "llvm-bc" : "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Pods.build/Release-iphoneos/BridgeKit.build/Objects-normal/arm64/BridgeKit.bc",
+    "object" : "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Pods.build/Release-iphoneos/BridgeKit.build/Objects-normal/arm64/BridgeKit.o"
+  }
+}

@@ -1,0 +1,1225 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "BridgeKit",
+    "printedName": "BridgeKit",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BridgeKit"
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "BridgeKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "JavaScriptEvaluation",
+        "printedName": "JavaScriptEvaluation",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "evaluateJavaScript",
+            "printedName": "evaluateJavaScript(_:completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Any?, (any Swift.Error)?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Any?, (any Swift.Error)?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Any?, (any Swift.Error)?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Any?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "ProtocolComposition",
+                                "printedName": "Any"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "(any Swift.Error)?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Error",
+                                "printedName": "any Swift.Error",
+                                "usr": "s:s5ErrorP"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9BridgeKit20JavaScriptEvaluationP08evaluatecD0_17completionHandlerySS_yypSg_s5Error_pSgtYbScMYccSgtF",
+            "mangledName": "$s9BridgeKit20JavaScriptEvaluationP08evaluatecD0_17completionHandlerySS_yypSg_s5Error_pSgtYbScMYccSgtF",
+            "moduleName": "BridgeKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : BridgeKit.JavaScriptEvaluation>",
+            "sugared_genericSig": "<Self where Self : BridgeKit.JavaScriptEvaluation>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:9BridgeKit20JavaScriptEvaluationP",
+        "mangledName": "$s9BridgeKit20JavaScriptEvaluationP",
+        "moduleName": "BridgeKit",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Topic",
+        "printedName": "Topic",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9BridgeKit5TopicP4nameSSvp",
+            "mangledName": "$s9BridgeKit5TopicP4nameSSvp",
+            "moduleName": "BridgeKit",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9BridgeKit5TopicP4nameSSvg",
+                "mangledName": "$s9BridgeKit5TopicP4nameSSvg",
+                "moduleName": "BridgeKit",
+                "genericSig": "<τ_0_0 where τ_0_0 : BridgeKit.Topic>",
+                "sugared_genericSig": "<Self where Self : BridgeKit.Topic>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:9BridgeKit5TopicP",
+        "mangledName": "$s9BridgeKit5TopicP",
+        "moduleName": "BridgeKit",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AnyTopic",
+        "printedName": "AnyTopic",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9BridgeKit8AnyTopicV4nameSSvp",
+            "mangledName": "$s9BridgeKit8AnyTopicV4nameSSvp",
+            "moduleName": "BridgeKit",
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 0,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9BridgeKit8AnyTopicV4nameSSvg",
+                "mangledName": "$s9BridgeKit8AnyTopicV4nameSSvg",
+                "moduleName": "BridgeKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(name:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyTopic",
+                "printedName": "BridgeKit.AnyTopic",
+                "usr": "s:9BridgeKit8AnyTopicV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9BridgeKit8AnyTopicV4nameACSS_tcfc",
+            "mangledName": "$s9BridgeKit8AnyTopicV4nameACSS_tcfc",
+            "moduleName": "BridgeKit",
+            "implicit": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:9BridgeKit8AnyTopicV",
+        "mangledName": "$s9BridgeKit8AnyTopicV",
+        "moduleName": "BridgeKit",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Topic",
+            "printedName": "Topic",
+            "usr": "s:9BridgeKit5TopicP",
+            "mangledName": "$s9BridgeKit5TopicP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BridgeKit",
+        "printedName": "BridgeKit",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(webView:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BridgeKit",
+                "printedName": "BridgeKit.BridgeKit",
+                "usr": "s:9BridgeKitAAC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "JavaScriptEvaluation",
+                "printedName": "any BridgeKit.JavaScriptEvaluation",
+                "usr": "s:9BridgeKit20JavaScriptEvaluationP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9BridgeKitAAC7webViewAbA20JavaScriptEvaluation_p_tcfc",
+            "mangledName": "$s9BridgeKitAAC7webViewAbA20JavaScriptEvaluation_p_tcfc",
+            "moduleName": "BridgeKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "BridgeError",
+            "printedName": "BridgeError",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "illegalPayloadFormat",
+                "printedName": "illegalPayloadFormat",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(BridgeKit.BridgeKit.BridgeError.Type) -> (Swift.String) -> BridgeKit.BridgeKit.BridgeError",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.String) -> BridgeKit.BridgeKit.BridgeError",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "BridgeError",
+                            "printedName": "BridgeKit.BridgeKit.BridgeError",
+                            "usr": "s:9BridgeKitAAC0A5ErrorO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(message: Swift.String)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "BridgeKit.BridgeKit.BridgeError.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "BridgeError",
+                            "printedName": "BridgeKit.BridgeKit.BridgeError",
+                            "usr": "s:9BridgeKitAAC0A5ErrorO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:9BridgeKitAAC0A5ErrorO20illegalPayloadFormatyADSS_tcADmF",
+                "mangledName": "$s9BridgeKitAAC0A5ErrorO20illegalPayloadFormatyADSS_tcADmF",
+                "moduleName": "BridgeKit"
+              },
+              {
+                "kind": "Var",
+                "name": "missingField",
+                "printedName": "missingField",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(BridgeKit.BridgeKit.BridgeError.Type) -> (Swift.String) -> BridgeKit.BridgeKit.BridgeError",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.String) -> BridgeKit.BridgeKit.BridgeError",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "BridgeError",
+                            "printedName": "BridgeKit.BridgeKit.BridgeError",
+                            "usr": "s:9BridgeKitAAC0A5ErrorO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(key: Swift.String)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "BridgeKit.BridgeKit.BridgeError.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "BridgeError",
+                            "printedName": "BridgeKit.BridgeKit.BridgeError",
+                            "usr": "s:9BridgeKitAAC0A5ErrorO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:9BridgeKitAAC0A5ErrorO12missingFieldyADSS_tcADmF",
+                "mangledName": "$s9BridgeKitAAC0A5ErrorO12missingFieldyADSS_tcADmF",
+                "moduleName": "BridgeKit"
+              },
+              {
+                "kind": "Var",
+                "name": "missingMessageHandler",
+                "printedName": "missingMessageHandler",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(BridgeKit.BridgeKit.BridgeError.Type) -> (Swift.String) -> BridgeKit.BridgeKit.BridgeError",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.String) -> BridgeKit.BridgeKit.BridgeError",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "BridgeError",
+                            "printedName": "BridgeKit.BridgeKit.BridgeError",
+                            "usr": "s:9BridgeKitAAC0A5ErrorO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(topic: Swift.String)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "BridgeKit.BridgeKit.BridgeError.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "BridgeError",
+                            "printedName": "BridgeKit.BridgeKit.BridgeError",
+                            "usr": "s:9BridgeKitAAC0A5ErrorO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:9BridgeKitAAC0A5ErrorO21missingMessageHandleryADSS_tcADmF",
+                "mangledName": "$s9BridgeKitAAC0A5ErrorO21missingMessageHandleryADSS_tcADmF",
+                "moduleName": "BridgeKit"
+              },
+              {
+                "kind": "Var",
+                "name": "invalidDataForHandler",
+                "printedName": "invalidDataForHandler",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(BridgeKit.BridgeKit.BridgeError.Type) -> (Swift.String, Swift.String) -> BridgeKit.BridgeKit.BridgeError",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.String, Swift.String) -> BridgeKit.BridgeKit.BridgeError",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "BridgeError",
+                            "printedName": "BridgeKit.BridgeKit.BridgeError",
+                            "usr": "s:9BridgeKitAAC0A5ErrorO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(topic: Swift.String, expectedType: Swift.String)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "BridgeKit.BridgeKit.BridgeError.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "BridgeError",
+                            "printedName": "BridgeKit.BridgeKit.BridgeError",
+                            "usr": "s:9BridgeKitAAC0A5ErrorO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:9BridgeKitAAC0A5ErrorO21invalidDataForHandleryADSS_SStcADmF",
+                "mangledName": "$s9BridgeKitAAC0A5ErrorO21invalidDataForHandleryADSS_SStcADmF",
+                "moduleName": "BridgeKit"
+              },
+              {
+                "kind": "Var",
+                "name": "encodingError",
+                "printedName": "encodingError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(BridgeKit.BridgeKit.BridgeError.Type) -> (Swift.String) -> BridgeKit.BridgeKit.BridgeError",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.String) -> BridgeKit.BridgeKit.BridgeError",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "BridgeError",
+                            "printedName": "BridgeKit.BridgeKit.BridgeError",
+                            "usr": "s:9BridgeKitAAC0A5ErrorO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(message: Swift.String)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "BridgeKit.BridgeKit.BridgeError.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "BridgeError",
+                            "printedName": "BridgeKit.BridgeKit.BridgeError",
+                            "usr": "s:9BridgeKitAAC0A5ErrorO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:9BridgeKitAAC0A5ErrorO08encodingC0yADSS_tcADmF",
+                "mangledName": "$s9BridgeKitAAC0A5ErrorO08encodingC0yADSS_tcADmF",
+                "moduleName": "BridgeKit"
+              },
+              {
+                "kind": "Var",
+                "name": "errorDescription",
+                "printedName": "errorDescription",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:9BridgeKitAAC0A5ErrorO16errorDescriptionSSSgvp",
+                "mangledName": "$s9BridgeKitAAC0A5ErrorO16errorDescriptionSSSgvp",
+                "moduleName": "BridgeKit",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:9BridgeKitAAC0A5ErrorO16errorDescriptionSSSgvg",
+                    "mangledName": "$s9BridgeKitAAC0A5ErrorO16errorDescriptionSSSgvg",
+                    "moduleName": "BridgeKit",
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "errorCode",
+                "printedName": "errorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:9BridgeKitAAC0A5ErrorO9errorCodeSivp",
+                "mangledName": "$s9BridgeKitAAC0A5ErrorO9errorCodeSivp",
+                "moduleName": "BridgeKit",
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:9BridgeKitAAC0A5ErrorO9errorCodeSivg",
+                    "mangledName": "$s9BridgeKitAAC0A5ErrorO9errorCodeSivg",
+                    "moduleName": "BridgeKit",
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:9BridgeKitAAC0A5ErrorO",
+            "mangledName": "$s9BridgeKitAAC0A5ErrorO",
+            "moduleName": "BridgeKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Error",
+                "printedName": "Error",
+                "usr": "s:s5ErrorP",
+                "mangledName": "$ss5ErrorP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "LocalizedError",
+                "printedName": "LocalizedError",
+                "usr": "s:10Foundation14LocalizedErrorP",
+                "mangledName": "$s10Foundation14LocalizedErrorP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "BridgeResponse",
+            "printedName": "BridgeResponse",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "success",
+                "printedName": "success",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(BridgeKit.BridgeKit.BridgeResponse.Type) -> (Any?) -> BridgeKit.BridgeKit.BridgeResponse",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Any?) -> BridgeKit.BridgeKit.BridgeResponse",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "BridgeResponse",
+                            "printedName": "BridgeKit.BridgeKit.BridgeResponse",
+                            "usr": "s:9BridgeKitAAC0A8ResponseO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Any?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "ProtocolComposition",
+                                "printedName": "Any"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "BridgeKit.BridgeKit.BridgeResponse.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "BridgeResponse",
+                            "printedName": "BridgeKit.BridgeKit.BridgeResponse",
+                            "usr": "s:9BridgeKitAAC0A8ResponseO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:9BridgeKitAAC0A8ResponseO7successyADypSgcADmF",
+                "mangledName": "$s9BridgeKitAAC0A8ResponseO7successyADypSgcADmF",
+                "moduleName": "BridgeKit"
+              },
+              {
+                "kind": "Var",
+                "name": "failure",
+                "printedName": "failure",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(BridgeKit.BridgeKit.BridgeResponse.Type) -> (BridgeKit.BridgeKit.BridgeError) -> BridgeKit.BridgeKit.BridgeResponse",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(BridgeKit.BridgeKit.BridgeError) -> BridgeKit.BridgeKit.BridgeResponse",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "BridgeResponse",
+                            "printedName": "BridgeKit.BridgeKit.BridgeResponse",
+                            "usr": "s:9BridgeKitAAC0A8ResponseO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "BridgeError",
+                            "printedName": "BridgeKit.BridgeKit.BridgeError",
+                            "usr": "s:9BridgeKitAAC0A5ErrorO"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "BridgeKit.BridgeKit.BridgeResponse.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "BridgeResponse",
+                            "printedName": "BridgeKit.BridgeKit.BridgeResponse",
+                            "usr": "s:9BridgeKitAAC0A8ResponseO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:9BridgeKitAAC0A8ResponseO7failureyAdB0A5ErrorOcADmF",
+                "mangledName": "$s9BridgeKitAAC0A8ResponseO7failureyAdB0A5ErrorOcADmF",
+                "moduleName": "BridgeKit"
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:9BridgeKitAAC0A8ResponseO",
+            "mangledName": "$s9BridgeKitAAC0A8ResponseO",
+            "moduleName": "BridgeKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "postMessage",
+            "printedName": "postMessage(data:to:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Topic",
+                "printedName": "any BridgeKit.Topic",
+                "usr": "s:9BridgeKit5TopicP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((BridgeKit.BridgeKit.BridgeResponse) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(BridgeKit.BridgeKit.BridgeResponse) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BridgeResponse",
+                        "printedName": "BridgeKit.BridgeKit.BridgeResponse",
+                        "usr": "s:9BridgeKitAAC0A8ResponseO"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9BridgeKitAAC11postMessage4data2to10completionyx_AA5Topic_pyAB0A8ResponseOcSgtSeRzSERzlF",
+            "mangledName": "$s9BridgeKitAAC11postMessage4data2to10completionyx_AA5Topic_pyAB0A8ResponseOcSgtSeRzSERzlF",
+            "moduleName": "BridgeKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable, τ_0_0 : Swift.Encodable>",
+            "sugared_genericSig": "<T where T : Swift.Decodable, T : Swift.Encodable>",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "registerMessageHandler",
+            "printedName": "registerMessageHandler(for:handler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Topic",
+                "printedName": "any BridgeKit.Topic",
+                "usr": "s:9BridgeKit5TopicP"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(τ_0_0, BridgeKit.BridgeKit) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(τ_0_0, BridgeKit.BridgeKit)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BridgeKit",
+                        "printedName": "BridgeKit.BridgeKit",
+                        "usr": "s:9BridgeKitAAC"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9BridgeKitAAC22registerMessageHandler3for7handleryAA5Topic_p_yx_ABtctSeRzSERzlF",
+            "mangledName": "$s9BridgeKitAAC22registerMessageHandler3for7handleryAA5Topic_p_yx_ABtctSeRzSERzlF",
+            "moduleName": "BridgeKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable, τ_0_0 : Swift.Encodable>",
+            "sugared_genericSig": "<T where T : Swift.Decodable, T : Swift.Encodable>",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handleReceivedMessage",
+            "printedName": "handleReceivedMessage(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "Any"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9BridgeKitAAC21handleReceivedMessageyyypF",
+            "mangledName": "$s9BridgeKitAAC21handleReceivedMessageyyypF",
+            "moduleName": "BridgeKit",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:9BridgeKitAAC",
+        "mangledName": "$s9BridgeKitAAC",
+        "moduleName": "BridgeKit",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "WKWebView",
+        "printedName": "WKWebView",
+        "declKind": "Class",
+        "usr": "c:objc(cs)WKWebView",
+        "moduleName": "WebKit",
+        "isOpen": true,
+        "intro_iOS": "8.0",
+        "objc_name": "WKWebView",
+        "declAttributes": [
+          "Preconcurrency",
+          "Available",
+          "ObjC",
+          "Custom",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)UIView",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIView",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "__DefaultCustomPlaygroundQuickLookable",
+            "printedName": "__DefaultCustomPlaygroundQuickLookable",
+            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
+            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "JavaScriptEvaluation",
+            "printedName": "JavaScriptEvaluation",
+            "usr": "s:9BridgeKit20JavaScriptEvaluationP",
+            "mangledName": "$s9BridgeKit20JavaScriptEvaluationP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/ayberkmogol\/Projects\/BridgeKit\/BridgeKit\/Classes\/BridgeKit.swift",
+      "kind": "Dictionary",
+      "offset": 1476,
+      "length": 3,
+      "value": "[]"
+    }
+  ]
+}

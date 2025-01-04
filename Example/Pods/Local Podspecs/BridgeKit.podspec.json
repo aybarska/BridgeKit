@@ -1,0 +1,22 @@
+{
+  "name": "BridgeKit",
+  "version": "0.1.0",
+  "summary": "A short description of BridgeKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/aybarska/BridgeKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Ayberk Mogol": "ayberk.m@yandex.com"
+  },
+  "source": {
+    "git": "https://github.com/aybarska/BridgeKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "13.0"
+  },
+  "source_files": "BridgeKit/Classes/**/*"
+}

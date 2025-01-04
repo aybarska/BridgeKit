@@ -1,0 +1,23 @@
+{
+  'version': 0,
+  'use-external-names': 'false',
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Release-iphoneos/Quick/Quick.framework/Modules"
+    'contents': [{
+      'type': 'file',
+      'name': "module.modulemap",
+      'external-contents': "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Pods.build/Release-iphoneos/Quick.build/unextended-module.modulemap",
+    }]
+    },
+    {
+    'type': 'directory',
+    'name': "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Release-iphoneos/Quick/Quick.framework/Headers"
+    'contents': [{
+      'type': 'file',
+      'name': "Quick-Swift.h",
+      'external-contents': "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Pods.build/Release-iphoneos/Quick.build/unextended-interface-header.h",
+    }]
+    }]
+}

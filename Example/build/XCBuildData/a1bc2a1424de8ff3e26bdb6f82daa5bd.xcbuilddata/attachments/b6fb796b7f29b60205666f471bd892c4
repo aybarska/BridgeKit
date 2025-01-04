@@ -1,0 +1,120 @@
+{
+  "" : {
+    "const-values" : "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/Quick-master.swiftconstvalues",
+    "dependencies" : "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/Quick-master.d",
+    "diagnostics" : "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/Quick-master.dia",
+    "emit-module-dependencies" : "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/Quick-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/Quick-master-emit-module.dia",
+    "swift-dependencies" : "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/Quick-master.swiftdeps"
+  },
+  "/Users/ayberkmogol/Projects/BridgeKit/Example/Pods/Quick/Sources/Quick/Behavior.swift" : {
+    "index-unit-output-path" : "/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/Behavior.o",
+    "llvm-bc" : "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/Behavior.bc",
+    "object" : "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/Behavior.o"
+  },
+  "/Users/ayberkmogol/Projects/BridgeKit/Example/Pods/Quick/Sources/Quick/Callsite.swift" : {
+    "index-unit-output-path" : "/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/Callsite.o",
+    "llvm-bc" : "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/Callsite.bc",
+    "object" : "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/Callsite.o"
+  },
+  "/Users/ayberkmogol/Projects/BridgeKit/Example/Pods/Quick/Sources/Quick/Configuration/Configuration.swift" : {
+    "index-unit-output-path" : "/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/Configuration.o",
+    "llvm-bc" : "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/Configuration.bc",
+    "object" : "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/Configuration.o"
+  },
+  "/Users/ayberkmogol/Projects/BridgeKit/Example/Pods/Quick/Sources/Quick/Configuration/QuickConfiguration.swift" : {
+    "index-unit-output-path" : "/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/QuickConfiguration-1819685e34ff8e7a9d921eccaccad3d0.o",
+    "llvm-bc" : "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/QuickConfiguration-1819685e34ff8e7a9d921eccaccad3d0.bc",
+    "object" : "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/QuickConfiguration-1819685e34ff8e7a9d921eccaccad3d0.o"
+  },
+  "/Users/ayberkmogol/Projects/BridgeKit/Example/Pods/Quick/Sources/Quick/DSL/DSL.swift" : {
+    "index-unit-output-path" : "/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/DSL.o",
+    "llvm-bc" : "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/DSL.bc",
+    "object" : "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/DSL.o"
+  },
+  "/Users/ayberkmogol/Projects/BridgeKit/Example/Pods/Quick/Sources/Quick/DSL/World+DSL.swift" : {
+    "index-unit-output-path" : "/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/World+DSL.o",
+    "llvm-bc" : "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/World+DSL.bc",
+    "object" : "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/World+DSL.o"
+  },
+  "/Users/ayberkmogol/Projects/BridgeKit/Example/Pods/Quick/Sources/Quick/ErrorUtility.swift" : {
+    "index-unit-output-path" : "/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/ErrorUtility.o",
+    "llvm-bc" : "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/ErrorUtility.bc",
+    "object" : "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/ErrorUtility.o"
+  },
+  "/Users/ayberkmogol/Projects/BridgeKit/Example/Pods/Quick/Sources/Quick/Example.swift" : {
+    "index-unit-output-path" : "/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/Example.o",
+    "llvm-bc" : "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/Example.bc",
+    "object" : "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/Example.o"
+  },
+  "/Users/ayberkmogol/Projects/BridgeKit/Example/Pods/Quick/Sources/Quick/ExampleGroup.swift" : {
+    "index-unit-output-path" : "/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/ExampleGroup.o",
+    "llvm-bc" : "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/ExampleGroup.bc",
+    "object" : "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/ExampleGroup.o"
+  },
+  "/Users/ayberkmogol/Projects/BridgeKit/Example/Pods/Quick/Sources/Quick/ExampleMetadata.swift" : {
+    "index-unit-output-path" : "/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/ExampleMetadata.o",
+    "llvm-bc" : "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/ExampleMetadata.bc",
+    "object" : "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/ExampleMetadata.o"
+  },
+  "/Users/ayberkmogol/Projects/BridgeKit/Example/Pods/Quick/Sources/Quick/Filter.swift" : {
+    "index-unit-output-path" : "/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/Filter.o",
+    "llvm-bc" : "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/Filter.bc",
+    "object" : "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/Filter.o"
+  },
+  "/Users/ayberkmogol/Projects/BridgeKit/Example/Pods/Quick/Sources/Quick/Hooks/Closures.swift" : {
+    "index-unit-output-path" : "/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/Closures.o",
+    "llvm-bc" : "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/Closures.bc",
+    "object" : "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/Closures.o"
+  },
+  "/Users/ayberkmogol/Projects/BridgeKit/Example/Pods/Quick/Sources/Quick/Hooks/ExampleHooks.swift" : {
+    "index-unit-output-path" : "/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/ExampleHooks.o",
+    "llvm-bc" : "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/ExampleHooks.bc",
+    "object" : "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/ExampleHooks.o"
+  },
+  "/Users/ayberkmogol/Projects/BridgeKit/Example/Pods/Quick/Sources/Quick/Hooks/HooksPhase.swift" : {
+    "index-unit-output-path" : "/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/HooksPhase.o",
+    "llvm-bc" : "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/HooksPhase.bc",
+    "object" : "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/HooksPhase.o"
+  },
+  "/Users/ayberkmogol/Projects/BridgeKit/Example/Pods/Quick/Sources/Quick/Hooks/SuiteHooks.swift" : {
+    "index-unit-output-path" : "/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/SuiteHooks.o",
+    "llvm-bc" : "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/SuiteHooks.bc",
+    "object" : "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/SuiteHooks.o"
+  },
+  "/Users/ayberkmogol/Projects/BridgeKit/Example/Pods/Quick/Sources/Quick/NSBundle+CurrentTestBundle.swift" : {
+    "index-unit-output-path" : "/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/NSBundle+CurrentTestBundle.o",
+    "llvm-bc" : "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/NSBundle+CurrentTestBundle.bc",
+    "object" : "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/NSBundle+CurrentTestBundle.o"
+  },
+  "/Users/ayberkmogol/Projects/BridgeKit/Example/Pods/Quick/Sources/Quick/QuickSelectedTestSuiteBuilder.swift" : {
+    "index-unit-output-path" : "/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/QuickSelectedTestSuiteBuilder.o",
+    "llvm-bc" : "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/QuickSelectedTestSuiteBuilder.bc",
+    "object" : "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/QuickSelectedTestSuiteBuilder.o"
+  },
+  "/Users/ayberkmogol/Projects/BridgeKit/Example/Pods/Quick/Sources/Quick/QuickTestObservation.swift" : {
+    "index-unit-output-path" : "/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/QuickTestObservation.o",
+    "llvm-bc" : "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/QuickTestObservation.bc",
+    "object" : "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/QuickTestObservation.o"
+  },
+  "/Users/ayberkmogol/Projects/BridgeKit/Example/Pods/Quick/Sources/Quick/QuickTestSuite.swift" : {
+    "index-unit-output-path" : "/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/QuickTestSuite.o",
+    "llvm-bc" : "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/QuickTestSuite.bc",
+    "object" : "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/QuickTestSuite.o"
+  },
+  "/Users/ayberkmogol/Projects/BridgeKit/Example/Pods/Quick/Sources/Quick/String+C99ExtendedIdentifier.swift" : {
+    "index-unit-output-path" : "/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/String+C99ExtendedIdentifier.o",
+    "llvm-bc" : "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/String+C99ExtendedIdentifier.bc",
+    "object" : "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/String+C99ExtendedIdentifier.o"
+  },
+  "/Users/ayberkmogol/Projects/BridgeKit/Example/Pods/Quick/Sources/Quick/URL+FileName.swift" : {
+    "index-unit-output-path" : "/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/URL+FileName.o",
+    "llvm-bc" : "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/URL+FileName.bc",
+    "object" : "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/URL+FileName.o"
+  },
+  "/Users/ayberkmogol/Projects/BridgeKit/Example/Pods/Quick/Sources/Quick/World.swift" : {
+    "index-unit-output-path" : "/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/World.o",
+    "llvm-bc" : "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/World.bc",
+    "object" : "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Pods.build/Release-iphoneos/Quick.build/Objects-normal/arm64/World.o"
+  }
+}

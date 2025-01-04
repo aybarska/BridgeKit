@@ -1,0 +1,27 @@
+PODS:
+  - BridgeKit (0.1.0)
+  - Nimble (10.0.0)
+  - Quick (2.2.1)
+
+DEPENDENCIES:
+  - BridgeKit (from `../`)
+  - Nimble (~> 10.0.0)
+  - Quick (~> 2.2.0)
+
+SPEC REPOS:
+  trunk:
+    - Nimble
+    - Quick
+
+EXTERNAL SOURCES:
+  BridgeKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  BridgeKit: bb47375d0ccfac8067bc7541cedd9e04085fcc39
+  Nimble: 5316ef81a170ce87baf72dd961f22f89a602ff84
+  Quick: f5754d69b7013f5864c29aab9ae6f0c79c5bc200
+
+PODFILE CHECKSUM: 2e769140bbfdda0a209988d1611fdfc4ffc60afd
+
+COCOAPODS: 1.16.1

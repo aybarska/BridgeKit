@@ -1,0 +1,10 @@
+Target dependency graph (5 targets)
+Target 'Pods-BridgeKit_Tests' in project 'Pods'
+➜ Explicit dependency on target 'Nimble' in project 'Pods'
+➜ Explicit dependency on target 'Pods-BridgeKit_Example' in project 'Pods'
+➜ Explicit dependency on target 'Quick' in project 'Pods'
+Target 'Quick' in project 'Pods' (no dependencies)
+Target 'Pods-BridgeKit_Example' in project 'Pods'
+➜ Explicit dependency on target 'BridgeKit' in project 'Pods'
+Target 'Nimble' in project 'Pods' (no dependencies)
+Target 'BridgeKit' in project 'Pods' (no dependencies)

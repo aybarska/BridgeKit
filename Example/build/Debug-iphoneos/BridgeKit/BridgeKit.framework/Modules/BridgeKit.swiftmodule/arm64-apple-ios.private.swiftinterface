@@ -1,0 +1,42 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0 effective-4.1.50 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 4 -enforce-exclusivity=checked -Onone -enable-experimental-feature OpaqueTypeErasure -enable-bare-slash-regex -module-name BridgeKit
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+@_exported import BridgeKit
+import Foundation
+import Swift
+import WebKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public protocol JavaScriptEvaluation {
+  func evaluateJavaScript(_ javaScriptString: Swift.String, completionHandler: (@_Concurrency.MainActor @Sendable (Any?, (any Swift.Error)?) -> Swift.Void)?)
+}
+extension WebKit.WKWebView : BridgeKit.JavaScriptEvaluation {
+}
+public protocol Topic {
+  var name: Swift.String { get }
+}
+final public class BridgeKit {
+  public init(webView: any BridgeKit.JavaScriptEvaluation)
+  @objc deinit
+}
+extension BridgeKit.BridgeKit {
+  public enum BridgeError : Swift.Error, Foundation.LocalizedError {
+    case illegalPayloadFormat(message: Swift.String)
+    case missingField(key: Swift.String)
+    case missingMessageHandler(topic: Swift.String)
+    case invalidDataForHandler(topic: Swift.String, expectedType: Swift.String)
+    case encodingError(message: Swift.String)
+    public var errorDescription: Swift.String? {
+      get
+    }
+  }
+  public enum BridgeResponse {
+    case success(Any?)
+    case failure(BridgeKit.BridgeKit.BridgeError)
+  }
+  final public func postMessage<T>(data: T, to topic: any BridgeKit.Topic, completion: ((BridgeKit.BridgeKit.BridgeResponse) -> Swift.Void)? = nil) where T : Swift.Decodable, T : Swift.Encodable
+  final public func registerMessageHandler<T>(for topic: any BridgeKit.Topic, handler: @escaping (T, BridgeKit.BridgeKit) -> Swift.Void) where T : Swift.Decodable, T : Swift.Encodable
+  final public func handleReceivedMessage(_ message: Any)
+}

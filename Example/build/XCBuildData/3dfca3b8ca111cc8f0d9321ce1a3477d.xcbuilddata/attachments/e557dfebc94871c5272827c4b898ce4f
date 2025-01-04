@@ -1,0 +1,23 @@
+{
+  'version': 0,
+  'use-external-names': 'false',
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Release-iphoneos/Nimble/Nimble.framework/Modules"
+    'contents': [{
+      'type': 'file',
+      'name': "module.modulemap",
+      'external-contents': "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Pods.build/Release-iphoneos/Nimble.build/unextended-module.modulemap",
+    }]
+    },
+    {
+    'type': 'directory',
+    'name': "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Release-iphoneos/Nimble/Nimble.framework/Headers"
+    'contents': [{
+      'type': 'file',
+      'name': "Nimble-Swift.h",
+      'external-contents': "/Users/ayberkmogol/Projects/BridgeKit/Example/build/Pods.build/Release-iphoneos/Nimble.build/unextended-interface-header.h",
+    }]
+    }]
+}
