@@ -17,8 +17,8 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
   s.swift_versions = ['5.0']
+  s.description      = <<-DESC
   
   **What is BridgeKit?**
 
