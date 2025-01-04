@@ -13,7 +13,7 @@ class ViewController: UIViewController, WKScriptMessageHandler {
 
     private var webViewTopLabel: UILabel!
     private var webView: WKWebView!
-    private var bridge: BridgeKit!
+    private var bridge: BridgeKitCore!
     private let textField = UITextField()
     private let sendButton = UIButton(type: .system)
 
@@ -35,7 +35,7 @@ class ViewController: UIViewController, WKScriptMessageHandler {
         view.addSubview(webView)
 
         // 2. Initialize BridgeKit
-        bridge = BridgeKit(webView: webView)
+        bridge = BridgeKitCore(webView: webView)
 
         // 3. Register Message Handlers
         registerHandlers()

@@ -27,7 +27,7 @@ private extension Data {
 
     func jsonString() throws -> String {
         guard let jsonString = String(data: self, encoding: .utf8) else {
-            throw BridgeKit.BridgeError.encodingError(message: "Could not convert data to UTF-8 string")
+            throw BridgeKitCore.BridgeError.encodingError(message: "Could not convert data to UTF-8 string")
         }
         return jsonString
     }
@@ -51,16 +51,16 @@ struct AnyTopic: Topic {
     let name: String
 }
 
-public final class BridgeKit {
+public final class BridgeKitCore {
     private let webView: JavaScriptEvaluation
-    private var messageHandlers: [String: (Data, BridgeKit) -> Void] = [:]
+    private var messageHandlers: [String: (Data, BridgeKitCore) -> Void] = [:]
 
     public init(webView: JavaScriptEvaluation) {
         self.webView = webView
     }
 }
 
-extension BridgeKit {
+extension BridgeKitCore {
 
     public enum BridgeError: Error, LocalizedError {
         case illegalPayloadFormat(message: String)
@@ -156,7 +156,7 @@ extension BridgeKit {
     }
     
     /// Registers a handler for incoming messages from JavaScript.
-    public func registerMessageHandler<T: Codable>(for topic: Topic, handler: @escaping (T, BridgeKit) -> Void) {
+    public func registerMessageHandler<T: Codable>(for topic: Topic, handler: @escaping (T, BridgeKitCore) -> Void) {
         messageHandlers[topic.name] = { [weak self] data, bridge in
             guard let self = self else { return }
             guard let decodedData = T.from(jsonObject: try! data.jsonObject()) else { // Force-unwrap is safe here because we check for jsonObject earlier in the process.

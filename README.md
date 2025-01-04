@@ -1,6 +1,6 @@
 # BridgeKit
 
-[![CI Status](https://img.shields.io/travis/Ayberk Mogol/BridgeKit.svg?style=flat)](https://travis-ci.org/aybarska/BridgeKit)
+[![CI Status](https://img.shields.io/travis/aybarska/BridgeKit.svg?style=flat)](https://travis-ci.org/aybarska/BridgeKit)
 [![Version](https://img.shields.io/cocoapods/v/BridgeKit.svg?style=flat)](https://cocoapods.org/pods/BridgeKit)
 [![License](https://img.shields.io/cocoapods/l/BridgeKit.svg?style=flat)](https://cocoapods.org/pods/BridgeKit)
 [![Platform](https://img.shields.io/cocoapods/p/BridgeKit.svg?style=flat)](https://cocoapods.org/pods/BridgeKit)
