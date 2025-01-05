@@ -35,56 +35,30 @@ Then, run pod install or pod update in your terminal.
 
 2.  **Initialize BridgeKit and Configure WKWebView:** In your view controller (typically in `viewDidLoad()`), create a `WKWebView`, configure its `WKUserContentController`, and initialize an instance of `BridgeKitCore`:
 
+    - Import necessary modules and conform to WKScriptMessageHandler:
     ```swift
     import UIKit
     import WebKit
     import BridgeKit
 
     class ViewController: UIViewController, WKScriptMessageHandler {
-        private var webView: WKWebView!
-        private var bridge: BridgeKitCore!
+    ```
+    
+    - Configure the WKWebView and initialize BridgeKitCore:
+    ```swift
+    let contentController = WKUserContentController()
+    contentController.add(self, name: "bridgekit") // Important: Must match JS name
+    let config = WKWebViewConfiguration()
+    config.userContentController = contentController
 
-        override func viewDidLoad() {
-            super.viewDidLoad()
-
-            let contentController = WKUserContentController()
-            contentController.add(self, name: "bridgekit") // Important: Must match JS name
-
-            let config = WKWebViewConfiguration()
-            config.userContentController = contentController
-
-            webView = WKWebView(frame: .zero, configuration: config)
-            view.addSubview(webView) // Add webview to your view hierarchy
-
-            bridge = BridgeKitCore(webView: webView)
-
-            registerHandlers() // Register message handlers
-            loadWebViewContent() // Load your web content
-            setupUI() // Set up your UI (if needed)
-        }
-        // ...
-    }
+    webView = WKWebView(frame: .zero, configuration: config) // Give config to your webview
+    bridge = BridgeKitCore(webView: webView) // Inform BridgeKit about webview
     ```
 
-3.  **Register Message Handlers (Swift):** Define message handlers in your Swift code to respond to messages from JavaScript. Use structs conforming to the `Topic` protocol to define message topics, and `Codable` structs to define the data being sent. It's crucial to match the data structure with the one from js:
+4.  **Register Message Handlers (Swift):** Define message handlers in your Swift code to respond to messages from JavaScript. Use structs conforming to the `Topic` protocol to define message topics, and `Codable` structs to define the data being sent. It's crucial to match the data structure with the one from js:
 
     ```swift
     private func registerHandlers() {
-        // Handle "showAlert" message
-        struct ShowAlertTopic: Topic {
-            let name: String = "showAlert"
-        }
-
-        struct EmptyData: Codable {} // Data type for showAlert (no data)
-
-        bridge.registerMessageHandler(for: ShowAlertTopic()) { [weak self] (_: EmptyData, bridge) in
-            DispatchQueue.main.async { // Ensure UI updates on main thread
-                let alert = UIAlertController(title: "Native Alert", message: "Button pressed in webview!", preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-                self?.present(alert, animated: true, completion: nil)
-            }
-        }
-
         // Handle "myTopic" message with string data
         struct ResponseData: Codable {
             let receivedText: String
@@ -100,12 +74,10 @@ Then, run pod install or pod update in your terminal.
     }
     ```
 
-4.  **Send Messages from Swift:** Use `bridge.postMessage` to send messages to your JavaScript code. Provide the data (as a `Codable` struct) and the topic (as a struct conforming to the `Topic` protocol):
+5.  **Send Messages from Swift:** Use `bridge.postMessage` to send messages to your JavaScript code. Provide the data (as a `Codable` struct) and the topic (as a struct conforming to the `Topic` protocol):
 
     ```swift
     @objc private func sendTextToWeb() {
-        guard let text = textField.text, !text.isEmpty else { return }
-
         struct TextData: Codable {
             let text: String
         }
@@ -125,7 +97,7 @@ Then, run pod install or pod update in your terminal.
     }
     ```
 
-5.  **JavaScript Code (index.html):** In your web page, use `window.webkit.messageHandlers.bridgekit.postMessage` to send messages to Swift. The `topic` and the structure of the `data` object must match the Swift `Topic` and `Codable` structs:
+6.  **JavaScript Code (index.html):** In your web page, use `window.webkit.messageHandlers.bridgekit.postMessage` to send messages to Swift. The `topic` and the structure of the `data` object must match the Swift `Topic` and `Codable` structs:
 
     ```html
     <!DOCTYPE html>
@@ -179,6 +151,7 @@ Then, run pod install or pod update in your terminal.
     </html>
     ```
 
+For more info please inspect example code. 
 ## Conclusion:
 
 BridgeKit empowers you to seamlessly bridge the gap between your native app and webview content. With its intuitive API and robust features, it streamlines message handling, simplifies data exchange, and ultimately enhances your app's development experience.
